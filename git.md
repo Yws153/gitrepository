@@ -13,7 +13,6 @@ git config  –global 参数，有了这个参数，表示你这台机器上所有的Git仓库都会使用这
 一：如何操作:
 1.创建一个版本库也非常简单，如下我是E盘 –> www下 目录下新建一个testgit版本库($pwd 命令是用于显示当前的目录);
 2.通过命令$git init 把这个目录变成git可以管理的仓库,  这时候你当前testgit目录下会多了一个.git的目录，这个目录是Git来跟踪管理版本的，没事千万不要手动乱改这个目录里面的文件，否则，会把git仓库给破坏了。
-
 如何本地提交文件：
 第一步：使用命令 git add readme.txt添加到暂存区里面去;($git add readme.txt)
 第二步：用命令 git commit告诉Git，把文件提交到仓库;($git commit -m 'readme.txt')
@@ -44,6 +43,107 @@ git checkout --readme.txt   撤销readme.txt修改
 
 删除文件
 一般情况下，可以直接在文件目录中把文件删了，或者使用如上rm命令：rm b.txt ，如果我想彻底从版本库中删掉了此文件的话，可以再执行commit命令提交掉
+
+
+
+git远程库
+添加了git远程库后只要本地作了提交，就可以通过如下命令：
+git push origin master
+把本地master分支的最新修改推送到github上了。
+
+克隆命令  git clone https://github.com/tugenhua0707/testgit2
+
+git checkout -b dev   创建并切换分支向，相当于如下2条命令
+git branch dev         
+git checkout dev
+
+总结创建与合并分支命令如下：
+
+查看分支：git branch
+
+创建分支：git branch name
+
+切换分支：git checkout name
+
+创建+切换分支：git checkout –b name
+
+合并某分支到当前分支：git merge name
+
+删除分支：git branch –d name
+
+如果我想查看分支合并的情况的话，需要使用命令 git log.命令行
+
+ 通常合并分支时，git一般使用”Fast forward”模式，在这种模式下，删除分支后，会丢掉分支信息，现在我们来使用带参数 –no-ff来禁用”Fast forward”模式。
+
+分支策略：首先master主分支应该是非常稳定的，也就是用来发布新版本，一般情况下不允许在上面干活，干活一般情况下在新建的dev分支上干活，干完后，比如上要发布，或者说dev分支代码稳定后可以合并到主分支master上来。
+
+
+
+Git基本常用命令如下：
+
+   mkdir：         XX (创建一个空目录 XX指目录名)
+
+   pwd：          显示当前目录的路径。
+
+   git init          把当前的目录变成可以管理的git仓库，生成隐藏.git文件。
+
+   git add XX       把xx文件添加到暂存区去。
+
+   git commit –m “XX”  提交文件 –m 后面的是注释。
+
+   git status        查看仓库状态
+
+   git diff  XX      查看XX文件修改了那些内容
+
+   git log          查看历史记录
+
+   git reset  –hard HEAD^ 或者 git reset  –hard HEAD~ 回退到上一个版本
+
+                        (如果想回退到100个版本，使用git reset –hard HEAD~100 )
+
+   cat XX         查看XX文件内容
+
+   git reflog       查看历史记录的版本号id
+
+   git checkout  --XX  把XX文件在工作区的修改全部撤销。
+
+   git rm XX          删除XX文件
+
+   git remote add origin https://github.com/tugenhua0707/testgit 关联一个远程库
+
+   git push –u(第一次要用-u 以后不需要) origin master 把当前master分支推送到远程库
+
+   git clone https://github.com/tugenhua0707/testgit  从远程库中克隆
+
+   git checkout –b dev  创建dev分支 并切换到dev分支上
+
+   git branch  查看当前所有的分支
+
+   git checkout master 切换回master分支
+
+   git merge dev    在当前的分支上合并dev分支
+
+   git branch –d dev 删除dev分支
+
+   git branch name  创建分支
+
+   git stash 把当前的工作隐藏起来 等以后恢复现场后继续工作
+
+   git stash list 查看所有被隐藏的文件列表
+
+   git stash apply 恢复被隐藏的文件，但是内容不删除
+
+   git stash drop 删除文件
+
+   git stash pop 恢复文件的同时 也删除文件
+
+   git remote 查看远程库的信息
+
+   git remote –v 查看远程库的详细信息
+
+   git push origin master  Git会把master分支推送到远程库对应的远程分支上
+
+
 
 
 

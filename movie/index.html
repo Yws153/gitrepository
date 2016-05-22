@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>英魂之刃</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onselectstart="return false;">
+    <div id="nav" class="clearfix">
+    	<div class="layer">
+    		<h1 class="logo">英魂之刃粉丝群</h1>
+	        <ul class="pages">
+	            <li><a href="poeple.html">英雄简介</a></li>
+	            <li><a href="gonglue.html">攻略</a></li>
+	            <li><a href="video.html">游戏视频</a></li>
+	        </ul>
+	        <form action="##" class="search">
+	            <input type="text">
+	            <button>搜索</button>
+	        </form>
+    	</div>
+    </div>
+    <div class="wrap" id="wrap">
+        <!-- photo负责平移、旋转-->
+        <div class="photo photo-front" onclick="turn(this)" id="photo_{{index}}">
+            <!-- photo-wrap负责翻转-->
+            <div class="photo-wrap">
+                <div class="side side-front">
+                    <p class="image"><img src="images/{{img}}"></p>
+                    <p class="caption">{{caption}}</p>
+                </div>
+                <div class="side side-back">
+                    <p class="desc">{{desc}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="contain layer">
+            <div class="contain-p">
+                <p>《英魂之刃》是由网龙公司开发，由腾讯公司独家代理的全球首款微端类DOTA对战网游。游戏基于DOTA游戏特色打造，采用网龙公司独家研发的S3引擎，以浓郁的中国风、穿越古今的英雄乱斗以及快节奏的竞技对战，在短短两年内一跃成为千万活跃用户级别的MOBA人气新宠。近日，官方宣布游戏于2015年1月16日启动超越公测。</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">    
+    </div>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
