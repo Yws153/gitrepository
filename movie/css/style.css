@@ -3,7 +3,7 @@
             padding: 0;
         }
         body{
-            background: #fbfbfb;
+            background: #f3f3f3;
             color: #555;
             font-family: 'Avenir Next','Lantinghei SC';
             font-size: 14px;
@@ -13,7 +13,7 @@
             -ms-font-smoothing:antialiased;
         }
         li{
-            list-style: none;(s)
+            list-style: none;
         }
         a{
             text-decoration: none;
@@ -25,7 +25,7 @@
         #nav{
             height: 40px;
             width:100%;
-            background-color: #ccc;
+            background-color: #111;
             margin-bottom:1px; 
             padding-top: 15px;
         }
@@ -34,6 +34,7 @@
         }
         .logo{
             font-size: 24px;
+            color: #ffff00;
         }
         .pages{
             margin-left: 30px; 
@@ -46,11 +47,31 @@
             text-decoration: none;
             color: #fff;
         }
+        .pages .curren,
         .pages a:hover{
-            color: #000;
+            color: #ffff55;
         }
         .search{
             float: right;
+            background: #FFF;
+            height: 25px;
+            width: 150px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search input,
+        .search button{
+            border: 0 none;
+            background: none;
+            outline: none;
+        }
+        .search input {
+            float: left;
+            width: 120px;
+            height: 25px;
+        }
+        .search button {
+            height: 25px;
         }
         .wrap{
             width: 100%;
@@ -226,25 +247,15 @@
             margin-top:562px;
         }
         .main{
-            height: 400px;
-            background: url(../images/bg.jpg); 
+            height: 800px;
+            background: url(../images/bg.jpg) no-repeat; 
             background-size: 100%;
         }
-        .contain dl{
-            display: inline-block;
-            width: 250px;
-            height: 300px;
-            border-radius: 5px;
-            background-color: #666;
-            margin: 50px 50px 0 0;
-        }
         .contain-p{
-            width: 600px;
-            color: #fff;
-            float: right;
-            margin-top: 200px;
-            margin-right: 150px;
+            color: #555;
             line-height: 2;
+            padding-top: 390px;
+            text-indent: 2em;
         }
         #footer{
             width: 100%;
@@ -289,14 +300,14 @@
         }
         .link li{
             float: left;
-            line-height: 25px;
-            height: 25px;
-            color: #fff;
+            line-height: 20px;
+            height: 20px;
+            color: #999;
             padding: 0 10px;
-            border-right:1px solid #fff;
+            border-right:1px solid #666;
         }
         .link a{
-            color:#fff;
+            color: #666;
             text-decoration: none;
         }
 
@@ -360,10 +371,10 @@
         .more-tit{
             height: 30px;
             line-height: 30px;
-           width: 100%;
-           font-size: 24px;
-           color: #000;
-           margin: 10px 0;
+            width: 100%;
+            font-size: 24px;
+            color: #000;
+            margin: 10px 0;
         }
         .moreHero{
             width: 100%;
@@ -371,18 +382,67 @@
             height: 250px;
             margin-bottom: 20px;
         }
-        .ul{
+        .ul {
             width: 230%;
         }
-        .ul li{
+        .ul li {
             float: left;
             width: 200px;
             height: 200px;
             margin-right: 10px;
             text-align: center;
         }
-        .ul img{
+        .ul img {
             width: 200px;
             height: 200px;
         }
-       
+        .bizhi,
+        .erwei {
+            margin-top: 20px;
+            background: #fff;
+            float: left;
+            width: 550px;
+            height: 300px;
+            box-shadow: 0px 2px 3px 3px #e7e7e7;
+        }
+        .bizhi {
+            margin-right: 60px;
+        }
+        .bizhi-title,
+        .erwei-title {
+            height: 50px;
+            line-height: 50px;
+            padding-left: 20px;
+            font-size: 16px;
+            color: #2e2e2e;
+            background: #f6f6f6;
+        }
+        .bizhi-img {
+            float: left;
+            margin: 20px 0 0 40px; 
+        }
+        .ziazai{
+            display: block;
+            width: 120px;
+            height: 30px;
+            color: #fff;
+            line-height: 30px;
+            border-radius: 3px;
+            background: #ff5400;
+            margin: 20px 0 0 45px; 
+            text-align: center;
+        }
+        .erwei-img {
+            float: left;
+            margin: 20px 0 0 80px; 
+        }
+        .erwei-img img{
+            height: 143px;
+            width: 143px;
+        }
+        .saoma{
+            display: block;
+            height: 30px;
+            line-height: 30px;
+            margin: 20px 0 0 25px; 
+        }
