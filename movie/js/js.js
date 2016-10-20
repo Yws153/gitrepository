@@ -181,3 +181,10 @@
         document.getElementById("pic").src=picsArr[index];
         timer=setTimeout("showPrepic()",3000); 
     }
+
+
+
+ 
+
+
+                    
