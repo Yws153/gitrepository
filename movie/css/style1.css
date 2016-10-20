@@ -59,8 +59,9 @@ span{
     filter:alpha(opacity=40);
 }
 .box-bd{
-    width: 100%;
+    width: 60%;
     padding-top:20px;
+    margin:0 auto;
     background-color:#fff;
 }
 .title1{
@@ -153,10 +154,13 @@ span{
     text-align:center;
 }
 .mod-tab-content{
-    clear: both;
-    width: 100%;
+   
+   
     overflow:hidden;
     *zoom:1;
+    position: relative;
+    left=20%;
+    bottom: 100px;
    
 }
 .title2{
@@ -181,5 +185,99 @@ span{
     text-align: right;
 }
 .m-list i{
+
+}
+
+
+.phopo{
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 30px;
+
+
+}
+.first{
+    float:left;
+    padding: 5px;
+    padding-left: 30px;
+
+}
+.phopo-1{
+    margin-bottom:-30px;
+}
+.turn-phop ul li img{
+    width: 390px;
+    height: 288px;
+
+}
+.phopo-2{
+    margin-left: 10%;
+    float:left;
+    width: 40%
+    height: 288px;
+}
+
+.turn-phop ul li{
+    width: 390px;
+    height: 288px;
+}
+.photo-31{
+    float:left;
+     width:60%;
+    height: 288px;
+}
+.trun-tr{
+    width:390px;
+    
+
+}
+.photo-322{
+    float:left;
+     width:390px;
+    height: 288px;
+}
+.tryone{
+    width:50%;
+    float:left;
+    height: 288px;
+    margin-bottom:70px;
+
+
+}
+.trytwo{
+    width:50%;
+    float:right;
+    height:288px;
+   
+}
+.trytwo a{
+    color:white;
+}
+.turn-pic{
+    width:390px;
+    height:288px;
+    float:right;
+    margin-right:80px;
+    margin-bottom:70px;
+}
+.turn-pic ul li{
+    width: 390px;
+    height: 288px
+}
+.namepass{
+    width:500px;
+    float: left;
+    height:288px;
+    
+    background-color: #345;
+   
+}
+.title-1{
+   width:500px; 
+   font-size: 30px;
+}
+.tablistin{
+    padding-top: 20px;
 
 }
