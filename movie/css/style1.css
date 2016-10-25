@@ -189,23 +189,7 @@ span{
 }
 
 
-.phopo{
-    background-color: white;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 30px;
 
-
-}
-.first{
-    float:left;
-    padding: 5px;
-    padding-left: 30px;
-
-}
-.phopo-1{
-    margin-bottom:-30px;
-}
 .turn-phop ul li img{
     width: 390px;
     height: 288px;
@@ -237,53 +221,7 @@ span{
      width:390px;
     height: 288px;
 }
-.tryone{
-    width:50%;
-    float:left;
-    height: 288px;
-    margin-bottom:70px;
-    
 
-
-}
-.trytwo{
-    width:50%;
-    float:right;
-    height:288px;
-    
-   
-}
-.trytwo a{
-    color:white;
-}
-.turn-pic{
-    width:390px;
-    height:288px;
-    float:right;
-    margin-right:75px;
-    margin-bottom:70px;
-
-}
-.turn-pic ul li{
-    width: 390px;
-    height: 288px
-}
-.namepass{
-    width:500px;
-    float: left;
-    height:288px;
-    
-    background-color: #345;
-   
-}
-.title-1{
-   width:500px; 
-   font-size: 30px;
-}
-.tablistin{
-    padding-top: 20px;
-
-}
 
 /*gonglue.css*/
 /*表头*/
@@ -300,7 +238,7 @@ span{
     height:81px;
     width:1000px;
     margin:0 auto;
-    background: rgb(231,167,168);
+    background: #347;
     
 
 }
@@ -309,8 +247,9 @@ span{
     color:rgb(255,255,254);
     text-align: center;
     font-size: 50px;
-    padding-left: 40px;
+    padding-left:40px;
 }
+
 .con-1{
     width: 300px;
     height: 81px;
@@ -320,6 +259,9 @@ span{
     
     box-shadow:3px,3px,3px,3px;
     position: relative;
+    
+   
+    
     
 
 }
@@ -331,6 +273,8 @@ span{
     box-shadow: 3px,3px,3px,3px ;
     overflow: hidden;
     border: 1px solid #f2f2f2;
+    
+    
 }
 .con-3{
     width: 300px;
@@ -339,22 +283,27 @@ span{
     float: left;
     background: rgb(53,87,135);
     box-shadow: 3px,3px,3px,3px ;
+     
+    
+
 }
+
 
 /*游戏介绍样式*/
-.introduce{
+#introduce{
     width: 1000px;
     height:600px;
-    background: rgb(231,167,168);
+    background: #347;
     margin:0 auto;
+    color:white;
 
 }
-.introduce h1 {
+#introduce h1{
     padding-top: 30px;
     text-align: center;
     font-family: "Microsoft YaHei"
 }
-.introduce p{
+#introduce p{
     text-indent: 1cm;
     padding:15px 50px;
 
@@ -363,6 +312,7 @@ span{
     width: 1000px;
     height:600px;
     margin:0 auto;
+    scrollbar-face-color : black;
 
 }
 .int h2{
@@ -375,15 +325,17 @@ span{
     width: 50%;
     height:400px;
     float:left;
-    background: rgb(239,213,120);
+    background: rgb(225,225,128);
     overflow: hidden;
+    color:black;
 }
 .int-2{
     width: 50%;
     height:400px;
     float:left;
-    background: rgb(239,213,120);
+    background: rgb(225,225,128);
     overflow: hidden;
+    color:black;
 }
 
 .int-11{
@@ -410,11 +362,12 @@ span{
     text-align: content;
 }
 /*新手指南样式*/
-.newguide{
+#newguide{
     width: 1000px;
     height:1250px;
-    background: rgb(231,167,168);
+    background: #347;
     margin:0 auto;
+    color:white;
 
 }
 .site{
@@ -489,9 +442,10 @@ span{
     background: white;
     background: url(../images/xingshougonglue2.jpg);
     background-repeat: no-repeat;
+    background-position: 35px;
     text-indent:1cm;
-    padding-left: 340px;
-    padding-right: 20px;
+    padding-left: 365px;
+    padding-right: 30px;
     font-size:20px;
 }
 
@@ -499,10 +453,10 @@ span{
 
 /*秘籍样式*/
 
-.miji{
+#miji{
     width: 1000px;
-    height:600px;
-    background: rgb(231,167,168);
+    height:660px;
+    background: #347;
   /*  filter:alpha(opacity:30);
     opacity:0.8;
     -moz-opacity:0.8;
@@ -510,14 +464,96 @@ span{
     margin:0 auto;
 
 }
+.tryone{
+    width:46%;
+    float:left;
+    height: 288px;
+    margin-bottom:70px;
+    margin-top: 60px;
+    
+   
+    
+
+
+}
+.trytwo{
+    width:54%;
+    float:right;
+    height:288px;
+     margin-top: 60px;
+
+    
+   
+}
+.trytwo p{
+    color:white;
+    font-size: 36px;
+    display: inline;
+}
+.turn-pic{
+    width:390px;
+    height:288px;
+    float:right;
+    margin-right:35px;
+    
+
+}
+
+/*.turn-pic ul li{
+    width: 390px;
+    height: 288px
+}*/
+.namepass{
+    width:500px;
+    float: left;
+    height:288px;
+    color:white;
+    background-color: #345;
+   
+}
+.title-1 a{
+   width:500px; 
+   font-size: 30px;
+   color: white;
+}
+.tablistin{
+    padding-top: 20px;
+    color:white;
+
+}
+.tab a{
+    color:white;
+}
+
+.phopo{
+    width:1000px;
+    height: 170px;
+    background-color: #347;
+    clear:both;
+
+    
+    
+    
+
+
+
+}
+.first{
+    float:left;
+    padding-left: 38px;
+    padding-top: 10px;
+
+
+}
 
 
 
 /*内容底部样式*/
+
 .boxx-1{
     width:280px;
     height: 150px;
-    background-color: white;
+    background-color: #347;
     margin:10px 10px 10px 200px;
     position: relative;
     box-shadow: 0px 1px 1px 1px;
@@ -525,17 +561,38 @@ span{
 
 
 }
+.boxx-1 h1{
+     color:black;
+   text-align: center;
+   padding:15px;
+   font-family: "Microsoft YaHei";
+
+
+}
+.boxx-1 select{
+   color:black;
+   text-align: center;
+   margin-left: 95px;
+   font-family: "Microsoft YaHei"
+
+}
 .boxx-2{
 
     width:280px;
     height: 150px;
-    background-color: white;
+    background-color: #347;
     margin:10px ;
     float: left;
     box-shadow: 0px 1px 1px 1px;
     overflow: hidden;
+    color:black;
+    text-align: center;
+    background: #347;
     
     
+}
+.boxx-2 h3{
+    padding-top: 15px;
 }
 .boxx-3{
     width:280px;
@@ -546,4 +603,9 @@ span{
     margin:10px 30px 10px 30px;
     float: left;
     box-shadow: 0px 1px 1px 1px;
+    color:black;
+    background:#347;
+}
+.boxx-3 h3{
+    text-align: center;
 }

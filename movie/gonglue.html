@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>英魂之刃-攻略</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style1.css">
 </head>
-<body onselectstart="return false;">
+<body onselectstart="return false;" >
     <div id="nav">
     	<div class="layer">
     		<h1 class="logo">英魂之刃简介</h1>
@@ -26,19 +27,19 @@
     </div>
     
 
-    <div class="mid-body">
+    <div class="mid-body" >
         <div class="lin-1">
-            <div class="con-1"><a href="#">游戏介绍</a></div>
-            <div class="con-2"><a href="#">新手指南</a></div>
-            <div class="con-3"><a href="#">攻略秘籍</a></div>
+            <div class="con-1"><a href="javascript:;" onclick="fim('introduce')">游戏介绍</a></div>
+            <div class="con-2"><a href="javascript:;" onclick="fim('newguide')">新手指南</a></div>
+            <div class="con-3"><a href="javascript:;" onclick="fim('miji')">攻略秘籍</a></div>
         </div>
        <!-- 游戏介绍页 -->
-        <div class="introduce" style="display: block">
+        <div id="introduce" style="display: block">
           <h1>英雄之刃</h1>
           <p>《英雄之刃》是由厦门橙号软件科技有限公司自主研发的一款魔幻策略网页游戏，于2013年6月3日开始发行。该作完美传承单机游戏《英雄无敌》经典玩法，分人族、龙族、不死族三大种族，下辖数十种职业，近百种佣兵，具有非常强的耐玩性和策略性。</p>
           <div class="int">
 
-          <div class="int-1">
+            <div class="int-1">
               <div class="int-11">
                   <h2>背景故事</h2>
                   <p>神谕大陆上是魔法与剑的大陆，这里佣兵团，有魔法工会，还有魔法的战争...</p><p>主人公的父亲,年老的领主终于在一次重病中离去,给留下了一座经常被盗贼骚扰的城堡和心怀不轨的2个兄弟.噢,这简直是个烂摊子! 唯一幸运的是,老领主生前对人民还算不错, 主人公获得了城里人们的认可,他们会在战争中给予主人公支持和帮助.不过如果主人公想要在这场领主继承的争斗中脱颖而出,就必须积累足够的功勋,历代领主中,唯有开拓疆土功勋卓著.</p>
@@ -51,15 +52,15 @@
                   <p>不死族在前期不容易上手，前期只有骷髅和僵尸，速度很慢，在遇到远程兵种时，很容易损失惨重，但是不死族中期则相当强悍
                   </p>
              </div>
-             </div>
-          <div class="int-2">
-            <div class="int-21">
+            </div>
+            <div class="int-2">
+              <div class="int-21">
                   <h2>游戏地图</h2>
                   <p>村庄说明:人口密集的小村庄，攻打下来后，可以建设城镇</p><p>伐木场说明: 可以砍伐木头的地方，不过会有少量的土著守护它</p><p>集市说明: 每隔一段时间，英雄可以在这里收到一些金币税收</p><p>智慧石说明: 上古时代英雄留下的智慧痕迹，每隔一段时间，访问它英雄可以在智慧石上领悟一些经验</p><p>泉水说明: 每隔一段时间，泉水会从地下冒出来,泉水可以恢复英雄魔法值
 
 
                   </p>
-            </div>
+              </div>
               <div class="int-22">
                   <h2>配置要求</h2>
                   <table>
@@ -85,17 +86,17 @@
                   </tr>
 
                   </table>
-             </div>
-         </div>
+              </div>
+            </div>
          </div>
         </div>
         
        <!-- 新手指南 -->
-        <div class="newguide" style="display: none">
-        <div class="site">
-          <h2>初始游戏</h2>
-          <h2>征战游戏</h2>
-          <h2>高手进阶</h2>
+        <div id="newguide" style="display: none">
+          <div class="site">
+          <h2>新手入门</h2>
+          <h2>进阶指南</h2>
+          <h2>高手必备</h2>
           <div class="youxi">
             <a href="#">新手礼包</a>
             <a href="#">游戏配置</a>
@@ -114,8 +115,8 @@
             <a href="#">宝石熔炼</a>
             <a href="#">打野技巧</a>
           </div>
-        </div>
-        <div class="newg">
+          </div>
+          <div class="newg">
           <h1>新手攻略</h1>
           <p>1.升级你的级别：级别还是很有用的，一方面是因为打匹配以及更多的模式需要等级，还有一个原因就是要解锁符文、天赋的话，也是需要等级的，其实理解起来和lol还是很像的</p>
           <p>2.通过周免熟悉更多的英雄：英魂之刃和lol一样也有周免的英雄，英雄池也非常的广袤，可以说和英雄联盟可以比一比，通过周免，建议通过人机等其他模式，挨个熟悉一下，感觉好的话可以再自行购买。</p>
@@ -123,101 +124,49 @@
           <p>4.使用新手推荐的英雄：英魂之刃当中也有专门给新手推荐的英雄，大多数都是近战（坦克）类型的英雄，而且操作非常的简单，血量也足够多，这样新手用起来会简单一点，也不容易被击杀。</p>
           <p>5.装备可以参考推荐出装：刚刚为什么让大家搜索这个英雄的技能和打法呢？这是因为装备系统有专门的推荐栏，如果你打法知道的话，单单卡在装备这边，使用推荐的出装也是可以的</p>
           <p>6.合适的阵容：如果你对MOBA类型的游戏不熟悉，那么可能很多东西都需要补习，比如如何获胜，阵容应该怎么选择，任何的MOBA类型的游戏都是一样的，只有在一些小东西上才会有差别</p>
-
-        </div>
-
-
-
+          </div>
         </div>
         <!-- 攻略秘籍 -->
-        <div class="miji" style="display: none">
+        <div id="miji" style="display: none;" >
           <div class="tryone" >
               <div class="turn-pic" id="pick">
-                  <ul>
-                      <li style="display:block;" > <img src="images/one.jpg"></li>
-                      <li style="display:none;"> <img src="images/two.jpg"></li>
-                      <li style="display:none;"> <img src="images/three.jpg"></li>
-                      <li style="display:none;"> <img src="images/four.jpg"></li>
-                  </ul>
+                  
+          <img src="images/one.jpg" id="pic1"/>
+                   
               </div>
           </div>
           <div class="trytwo" >
               <div class="namepass">
                    <div class="title-1">
-                      <a href="javascript:tab(0)" class="" id="tab1">新闻</a>
-                      <a href="javascript:tab(1)"   class="" id="tab2">活动</a>
-                      <a href="javascript:tab(2)"  class="" id="tab3">公告</a>
+                      <a href="javascript:;"  class="tabe" >新闻</a>
+                      
                       <hr style="padding-top: 15px"/>
-                  </div> 
-                  <div class="tab" id="tab1" style="display: block ;">
-                    <div class="tablist">
+                   </div> 
+                   <div class="tab" id="tab0" style="display: block ;">
+                      <div class="tablist">
                       <ul>
                           <li class="tablistin">
-                              <a href="" target="_blank">蚩尤爸爸英魂之刃火神战姬出装加点玩法攻略推荐</a>
+                              <a href="#" >蚩尤爸爸英魂之刃火神战姬出装加点玩法攻略推荐</a>
                               <span>10/12</span>
                           </li>
                           <li class="tablistin">
-                              <a href="" target="_blank">英魂之刃温蒂皮肤新春斗锤视频以及获得方式</a>
+                              <a href="#" >英魂之刃温蒂皮肤新春斗锤视频以及获得方式</a>
                               <span>10/09</span>
                           </li>
                           <li class="tablistin">
-                              <a href="" target="_blank">英魂之刃孙悟空皮肤大圣归来视频以及获得方式</a>
+                              <a href="#" >英魂之刃孙悟空皮肤大圣归来视频以及获得方式</a>
                               <span>10/09</span>
                           </li>
                           <li class="tablistin">
-                              <a href="" target="_blank">英魂之刃新英雄火神战姬实战截图多玩独家发布</a>
-                              <span>10/09</span>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="tab" id="tab2" style="display: none;">
-                  <div class="tablist">
-                      <ul>
-                          <li class="tablistin">
-                              <a href="" target="_blank">英雄之刃出新活动了，你值得拥有，快来参加吧。</a>
-                              <span>10/12</span>
-                          </li>
-                          <li class="tablistin">
-                              <a href="" target="_blank">英雄之刃出新活动了，你值得拥有，快来参加吧。</a>
-                              <span>10/09</span>
-                          </li>
-                          <li class="tablistin">
-                              <a href="" target="_blank">英雄之刃出新活动了，你值得拥有，快来参加吧。</a>
-                              <span>10/09</span>
-                          </li>
-                          <li class="tablistin">
-                              <a href="" target="_blank">英雄之刃出新活动了，你值得拥有，快来参加吧。</a>
+                              <a href="#" >英魂之刃新英雄火神战姬实战截图多玩独家发布</a>
                               <span>10/09</span>
                           </li>
                       </ul>
-                  </div>
-              </div>
-              <div class="tab" id="tab2" style="display: none ;">
-                  <div class="tablist">
-                      <ul>
-                          <li class="tablistin">
-                              <a href="" target="_blank">这是一个公告，这是一个公告，这是一个公告</a>
-                              <span>10/12</span>
-                          </li>
-                          <li class="tablistin">
-                              <a href="" target="_blank">这是一个公告，这是一个公告，这是一个公告</a>
-                              <span>10/09</span>
-                          </li>
-                          <li class="tablistin">
-                              <a href="" target="_blank">这是一个公告，这是一个公告，这是一个公告</a>
-                              <span>10/09</span>
-                          </li>
-                          <li class="tablistin">
-                              <a href="" target="_blank">这是一个公告，这是一个公告，这是一个公告</a>
-                              <span>10/09</span>
-                          </li>
-                      </ul>
-                  </div>
+                      </div>
+                   </div>
+                   
               </div>
           </div>
-      
-
           <div class="phopo">
             <div class="phopo-1">
               <div class="first"><a href="#">
@@ -230,32 +179,59 @@
                 <img src="images/seven.jpg"></a>
               </div>
           </div>
-   </div>
-
-
         </div>
-
-
-
-
-
-
 
 
     </div>
 
-       
+    </div>
+           
 
-            <div class="boxx-1">游戏介绍</div>
-            <div class="boxx-2">新手指南</div>
-            <div class="boxx-3">攻略秘籍</div>
+            <div class="boxx-1">
+               <h1>合伙人列表</h1>
+               <select>
+                     <option value="selected">合作人</option>
+                     <option value="">合作人1</option>
+                     <option value="">合作人2</option>
+                     <option value="">合作人3</option>
+               </select>
+
+
+            </div>
+            <div class="boxx-2">
+            <h3>客服专区</h3>
+            <ul>
+              <li>
+            <a href="#">忘记密码</a>
+            </li><li>
+            <a href="#">游戏安全</a>
+            </li><li>
+            <a href="#">防沉溺设置</a></li></ul>
+
+
+
+            </div>
+            
+
+
+
+            <div class="boxx-3">
+            <h3>常见问题</h3>
+            <ul>
+            <li><a href="#">登录黑屏怎么办？</a></li>
+            <li><a href="#">账号丢失怎么办？</a></li>
+            <li><a href="#">忘记密码怎么办？</a></li>
+            <li><a href="#">服务器信号不好怎么办？</a></li>
+
+            </ul>
+
+
+            </div>
+            
            
        
         
-
-  
-
-    <div id="footer">   
+ <div id="footer">   
         <ul class="link">
             <li>友情链接</li>
             <li><a href="##">最新网页游戏</a></li>
@@ -263,7 +239,21 @@
             <li><a href="##">火影忍者lol</a></li>
         </ul> 
     </div>
-    <script type="text/javascript" src="js/data.js"></script>
+    
+    <script type="text/javascript" src="js/js2.js"></script>
     <script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript">
+   function fim(obj){
+    document.getElementById('introduce').style.display="none"
+    document.getElementById('newguide').style.display="none"
+    document.getElementById('miji').style.display="none"
+    document.getElementById(obj).style.display="block"
+   }
+
+  
+
+    </script>
+    
 </body>
 </html>
